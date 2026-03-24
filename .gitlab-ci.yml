@@ -37,6 +37,6 @@ mirror:
     GIT_DEPTH: 0
   script:
     - git checkout -B main
-    - git push --mirror git@github.com:engineering-with-ai/software-typescript-react-mobile.git
+    - git push --mirror git@github.com:engineering-with-ai/typescript-react-mobile.git
   only:
     - main
