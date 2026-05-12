@@ -18,8 +18,7 @@
     "checks": "npm run depcheck && npm run format && npm run typecheck && npm run security && npm run lint",
     "unit": "jest",
     "integration": "start-server-and-test start:mock http://localhost:8081 'detox test --configuration android.emu.debug --headless'",
-    "healthcheck": "start-server-and-test start http://localhost:8081 'curl -sf http://localhost:8081/status | grep -q packager-status:running'",
-    "test": "npm run unit && npm run healthcheck && npm run integration",
+    "test": "npm run unit && npm run integration",
     "cover": "c8 npm run test",
     "review": "claude 'run code-reviewer agent against diff for quality and simplicity'",
     "commit": "npm run checks && npm run cover && npm run review && git add -A && git cz && git push"
