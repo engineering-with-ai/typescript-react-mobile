@@ -36,7 +36,11 @@ export function AppBar({
       borderBottomWidth={1}
       borderBottomColor="$borderColor"
     >
-      <TouchableOpacity testID="menu-button" onPress={onMenuPress} activeOpacity={0.7}>
+      <TouchableOpacity
+        testID="menu-button"
+        onPress={onMenuPress}
+        activeOpacity={0.7}
+      >
         <View padding="$xs">
           <Menu size={24} color={iconColor} />
         </View>
